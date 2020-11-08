@@ -1,0 +1,53 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+    background-color: bisque;
+    box-shadow: black;
+    text-align: center;
+    color: rgb(172, 3, 3);
+}
+
+input{
+    margin: 0;
+    padding: 5px;
+    width: 70%;
+}
+
+button{
+    margin-top: 8px;
+    padding: 5px;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+
+button:hover{
+    color: rgb(255, 251, 251);
+    background-color: rgb(151, 8, 8);
+}
+
+li{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 6, 44);
+    line-height: 2em;
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid;
+    width: 70%;
+    box-shadow: 0 0 5px black;
+    border-radius: 4px;
+}
+
+li:hover{
+    color: rgb(255, 251, 251);
+    background-color: rgb(151, 8, 8);
+}
+
+.checked{
+    text-decoration: line-through;
+    background-color: #ffffff;
+}
