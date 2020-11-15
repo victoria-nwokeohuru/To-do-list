@@ -1,53 +1,88 @@
-body{
-    background-color: bisque;
+*{
+    box-sizing: border-box;
 }
 
-.container{
-    background-color: bisque;
-    box-shadow: black;
+.header{
+    background-color: red;
+    padding: 30px 40px;
+    color: white;
     text-align: center;
-    color: rgb(172, 3, 3);
 }
 
-input{
-    margin: 0;
-    padding: 5px;
-    width: 70%;
+.header:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-button{
-    margin-top: 8px;
-    padding: 5px;
-    width: 30%;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 5px black;
+#input{
+    padding: 10px;
+    width: 75%;
+    font-style: italic;
+    font-size: 20px;
+    float: left;
 }
 
-button:hover{
-    color: rgb(255, 251, 251);
-    background-color: rgb(151, 8, 8);
+.btn{
+    padding: 10px;
+    width: 25%;
+    background-color: rgb(146, 143, 143);
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    float: left;
+}
+
+.btn:hover{
+    background-color: rgb(143, 5, 5);
+    color: white;
+}
+
+ul{
+    margin-top: 20px;
+    padding: 0;
 }
 
 li{
-    text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(6, 6, 44);
-    line-height: 2em;
-    list-style-type: none;
-    padding: 5px;
-    border: 1px solid;
-    width: 70%;
-    box-shadow: 0 0 5px black;
-    border-radius: 4px;
+    background: rgb(228, 228, 228);
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    user-select: none;
+}
+
+li:nth-child(even){
+    background: rgb(182, 180, 180);
+}
+
+
+li:nth-child(even):hover{
+    background-color: rgb(143, 5, 5);
+    color: white;
+}
+
+li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
 }
 
 li:hover{
-    color: rgb(255, 251, 251);
-    background-color: rgb(151, 8, 8);
+    background-color: red;
+    opacity: 0.5;
+    color: white;
 }
 
-.checked{
-    text-decoration: line-through;
-    background-color: #ffffff;
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+    color: black;
 }
